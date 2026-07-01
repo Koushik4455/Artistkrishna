@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Dr. B. Krishna Murthy</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Main.css">
+</head>
+<style>
+    /* ==========================================
+   GOOGLE FONT
+========================================== */
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+        background: black;
+        color: white;
+        scroll-behavior: smooth;
+    }
+
+    /* ==========================================
+   COMMON STYLES
+========================================== */
+
+    .section-title {
+        font-size: 42px;
+        font-weight: 700;
+
+        margin-bottom: 20px;
+    }
+
+    .section-subtitle {
+        display: inline-block;
+        color: #b8860b;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 32px;
+        color: white;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    /* ==========================================
+   NAVBAR
+========================================== */
+    /* =========================
+   Navbar Default
+========================= */
+
+    .navbar {
+        background: transparent !important;
+        transition: all 0.4s ease;
+        padding: 15px 0;
+    }
+
+    /* Logo */
+
+    .navbar-brand {
+        color: #ffb400 !important;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    /* Menu */
+
+    .navbar .nav-link {
+        color: #000 !important;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+
+    /* Hover */
+
+    /* ===========================
+   Desktop
+=========================== */
+
+    .navbar {
+        background: transparent;
+        transition: .4s;
+        padding: 15px 0;
+    }
+
+    .navbar.scrolled {
+        background: #000 !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    }
+
+    .navbar-brand {
+        color: #b8860b !important;
+        transition: .4s;
+    }
+
+    .navbar .nav-link {
+        color: #000 !important;
+        transition: .4s;
+    }
+
+    .navbar.scrolled,
+    .navbar.scrolled .nav-link {
+        color: white !important;
+    }
+     
+    .navbar-nav .nav-item.active .nav-link{
+    color: #ffb400 !important;
+}
+
+
+    /* ===========================
+   Mobile & Tablet
+=========================== */
+
+    @media (max-width:991.98px) {
+
+        .navbar {
+            background: #000 !important;
+            padding: 10px 0;
+        }
+
+        .navbar-brand {
+            font-size: 18px !important;
+        }
+      
+        .navbar .nav-link {
+            color: #fff !important;
+            margin-left: 0;
+            padding: 12px 15px;
+        }
+
+        .navbar-collapse {
+            background: #000;
+            margin-top: 10px;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .navbar-toggler {
+            border-color: #fff;
+        }
+
+        .navbar-toggler-icon {
+            filter: none;
+        }
+    }
+
+    /* .navbar {
+        background: rgba(0, 0, 0, .85);
+        padding: 18px 0;
+        transition: .4s;
+    }
+
+    .navbar-brand {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff !important;
+        font-size: 16px;
+        margin-left: 25px;
+        transition: .3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #d4af37 !important;
+    }
+
+    .nav-item.active .nav-link {
+        color: #d4af37 !important;
+    } */
+
+    /* ==========================================
+   BANNER
+========================================== */
+
+
+
+    .banner img {
+        width: 100%;
+        display: block;
+    }
+
+
+    /* ==========================================
+   ABOUT SECTION
+========================================== */
+
+    .about-section {
+        padding: 90px 0;
+
+    }
+
+    .about-img {
+        width: 100%;
+        border-radius: 18px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, .12);
+        transition: .4s;
+    }
+
+    .about-img:hover {
+        transform: scale(1.03);
+    }
+
+    .about-section p {
+        text-align: justify;
+    }
+
+    .artist-btn {
+        background: #d4af37;
+        color: white;
+        padding: 14px 35px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: .3s;
+    }
+
+    .artist-btn:hover {
+        background: #222;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* ==========================================
+   ARTISTIC JOURNEY
+========================================== */
+
+    .journey-section {
+        padding: 90px 0;
+        background: black;
+    }
+
+    .journey-heading {
+        font-size: 24px;
+        color: #d4af37;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    .journey-section p {
+        text-align: justify;
+    }
+
+    /* ==========================================
+   CARD SHADOW
+========================================== */
+
+    .shadow-box {
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    }
+
+    /* ==========================================
+   BUTTON EFFECT
+========================================== */
+
+    .btn {
+        transition: .4s;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+    }
+
+    /* ==========================================
+   IMAGE EFFECT
+========================================== */
+
+    .about-img:hover {
+        box-shadow: 0 20px 45px rgba(0, 0, 0, .18);
+    }
+
+    /* ==========================================
+   SECTION SPACING
+========================================== */
+
+    section {
+        position: relative;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    /*==========================================
+            STATISTICS SECTION
+==========================================*/
+
+    .stats-section {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #1d1d1d, #2f2f2f);
+        color: #fff;
+    }
+
+    .stat-box {
+        background: rgba(255, 255, 255, .08);
+        padding: 35px 25px;
+        border-radius: 15px;
+        transition: .4s;
+        height: 100%;
+        backdrop-filter: blur(5px);
+    }
+
+    .stat-box:hover {
+        transform: translateY(-10px);
+        background: #d4af37;
+    }
+
+    .stat-box i {
+        font-size: 45px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .stat-box h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .stat-box p {
+        margin: 0;
+        color: #fff;
+        font-size: 16px;
+    }
+
+
+    /*==========================================
+                FOOTER
+==========================================*/
+
+    .footer {
+
+        background: #111;
+        color: #ddd;
+        padding: 70px 0 30px;
+    }
+
+    .footer h3 {
+
+        color: #fff;
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+
+        color: #ccc;
+        line-height: 28px;
+    }
+
+    .footer hr {
+
+        border-color: rgba(255, 255, 255, .1);
+        margin: 30px 0;
+    }
+
+
+    /*==========================================
+            SOCIAL ICONS
+==========================================*/
+
+    .social-icons {
+
+        margin: 25px 0;
+    }
+
+    .social-icons a {
+
+        width: 45px;
+        height: 45px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .08);
+        color: #fff;
+        margin: 0 8px;
+        transition: .4s;
+        text-decoration: none;
+    }
+
+    .social-icons a:hover {
+
+        background: #d4af37;
+        transform: translateY(-6px);
+    }
+
+
+    /*==========================================
+        SCROLLBAR
+==========================================*/
+
+    ::-webkit-scrollbar {
+
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+
+        background: #eee;
+    }
+
+    ::-webkit-scrollbar-thumb {
+
+        background: #d4af37;
+        border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+
+        background: #b98d19;
+    }
+
+
+    /*==========================================
+            RESPONSIVE
+==========================================*/
+
+
+    /* Large Laptop */
+
+    @media (max-width:1200px) {
+
+        .section-title {
+
+            font-size: 38px;
+        }
+
+    }
+
+
+    /* Laptop */
+
+    @media (max-width:992px) {
+
+        .navbar-brand {
+
+            font-size: 28px;
+        }
+
+        .navbar-nav {
+
+            background: #111;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        .navbar-nav .nav-link {
+
+            margin-left: 0;
+            padding: 10px;
+        }
+
+        .section-title {
+
+            font-size: 34px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+
+            display: block;
+            text-align: center;
+        }
+
+        .journey-heading {
+
+            text-align: center;
+        }
+
+        .about-section,
+        .journey-section {
+
+            padding: 70px 0;
+        }
+
+        .about-section p,
+        .journey-section p {
+
+            text-align: justify;
+        }
+
+        .artist-btn {
+
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .col-lg-6 {
+
+            margin-bottom: 35px;
+        }
+
+    }
+
+
+    /* Tablet */
+
+    @media (max-width:768px) {
+
+        .banner {
+
+            margin-top: 70px;
+        }
+
+        .section-title {
+
+            font-size: 30px;
+        }
+
+        .section-subtitle {
+
+            font-size: 14px;
+        }
+
+        p {
+
+            font-size: 15px;
+            line-height: 28px;
+        }
+
+        .about-section,
+        .journey-section,
+        .stats-section {
+
+            padding: 60px 0;
+        }
+
+        .stat-box {
+
+            margin-bottom: 25px;
+        }
+
+        .footer {
+
+            padding: 50px 0 25px;
+        }
+
+        .footer h3 {
+
+            font-size: 28px;
+        }
+
+        .social-icons a {
+
+            width: 42px;
+            height: 42px;
+        }
+
+    }
+
+
+    /* Mobile */
+
+    @media (max-width:576px) {
+
+        .navbar {
+
+            padding: 12px 0;
+        }
+
+        .banner {
+
+            margin-top: 65px;
+        }
+
+        .section-title {
+
+            font-size: 26px;
+        }
+
+        .section-subtitle {
+
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        p {
+
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        .artist-btn {
+
+            width: 100%;
+            text-align: center;
+        }
+
+        .about-img {
+
+            border-radius: 12px;
+        }
+
+        .stat-box {
+
+            padding: 25px 15px;
+        }
+
+        .stat-box h2 {
+
+            font-size: 32px;
+        }
+
+        .stat-box i {
+
+            font-size: 36px;
+        }
+
+        .footer {
+
+            text-align: center;
+        }
+
+        .footer h3 {
+
+            font-size: 24px;
+        }
+
+        .social-icons a {
+
+            margin: 5px;
+        }
+
+    }
+
+
+    /* Small Mobile */
+
+    @media(max-width:375px) {
+
+        .section-title {
+
+            font-size: 22px;
+        }
+
+        p {
+
+            font-size: 13px;
+        }
+
+        .navbar-brand {
+
+            font-size: 24px;
+        }
+
+        .footer h3 {
+
+            font-size: 22px;
+        }
+
+    }
+
+    /* ==========================================
+        PREMIUM ANIMATIONS
+==========================================*/
+
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Fade animation */
+
+    @keyframes fadeUp {
+
+        from {
+
+            opacity: 0;
+            transform: translateY(50px);
+
+        }
+
+        to {
+
+            opacity: 1;
+            transform: translateY(0);
+
+        }
+
+    }
+
+    /* Floating image */
+
+    @keyframes floating {
+
+        0% {
+
+            transform: translateY(0px);
+
+        }
+
+        50% {
+
+            transform: translateY(-12px);
+
+        }
+
+        100% {
+
+            transform: translateY(0px);
+
+        }
+
+    }
+
+    .about-img {
+        animation: floating 5s ease-in-out infinite;
+    }
+
+    /* ==========================================
+        SECTION TITLE
+==========================================*/
+
+    .section-title {
+
+        position: relative;
+        display: inline-block;
+        padding-bottom: 12px;
+
+    }
+
+    .section-title::after {
+
+        content: '';
+
+        position: absolute;
+
+        left: 0;
+
+        bottom: 0;
+
+        width: 80px;
+
+        height: 4px;
+
+        background: #d4af37;
+
+        border-radius: 30px;
+
+    }
+
+    @media(max-width:992px) {
+
+        .section-title {
+
+            display: block;
+            text-align: center;
+
+        }
+
+        .section-title::after {
+
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+    }
+
+
+    /* ==========================================
+        IMAGE EFFECT
+==========================================*/
+
+    .about-img {
+
+        transition: .5s;
+
+    }
+
+    .about-img:hover {
+
+        transform: scale(1.04) rotate(.5deg);
+
+    }
+
+
+    /* ==========================================
+        BUTTON
+==========================================*/
+
+    .artist-btn {
+
+        position: relative;
+
+        overflow: hidden;
+
+        z-index: 1;
+
+    }
+
+    .artist-btn::before {
+
+        content: '';
+
+        position: absolute;
+
+        left: -100%;
+
+        top: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: #111;
+
+        transition: .5s;
+
+        z-index: -1;
+
+    }
+
+    .artist-btn:hover::before {
+
+        left: 0;
+
+    }
+
+    .artist-btn:hover {
+
+        color: #fff;
+
+    }
+
+
+    /* ==========================================
+        NAVBAR
+==========================================*/
+
+    .navbar {
+
+        backdrop-filter: blur(10px);
+
+        box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
+
+    }
+
+
+    /* ==========================================
+        STAT BOX
+==========================================*/
+
+    .stat-box {
+
+        overflow: hidden;
+
+        position: relative;
+
+    }
+
+    .stat-box::before {
+
+        content: '';
+
+        position: absolute;
+
+        top: -100%;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: rgba(255, 255, 255, .08);
+
+        transition: .5s;
+
+    }
+
+    .stat-box:hover::before {
+
+        top: 0;
+
+    }
+
+
+    /* ==========================================
+        SOCIAL ICONS
+==========================================*/
+
+    .social-icons a {
+
+        position: relative;
+
+        overflow: hidden;
+
+    }
+
+    .social-icons a::after {
+
+        content: '';
+
+        position: absolute;
+
+        width: 0;
+
+        height: 0;
+
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, .2);
+
+        transition: .4s;
+
+    }
+
+    .social-icons a:hover::after {
+
+        width: 120px;
+
+        height: 120px;
+
+    }
+
+
+    /* ==========================================
+        FOOTER
+==========================================*/
+
+    .footer {
+
+        position: relative;
+
+    }
+
+    .footer::before {
+
+        content: '';
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 1px;
+
+        background: linear-gradient(to right,
+                transparent,
+                #d4af37,
+                transparent);
+
+    }
+
+
+    /* ==========================================
+        CARD ANIMATION
+==========================================*/
+
+    .about-section,
+    .journey-section,
+    .stats-section {
+
+        animation: fadeUp 1s ease;
+
+    }
+
+
+    /* ==========================================
+        SELECTION COLOR
+==========================================*/
+
+    ::selection {
+
+        background: #d4af37;
+
+        color: #fff;
+
+    }
+
+
+    /* ==========================================
+        HOVER TRANSITION
+==========================================*/
+
+    a,
+    button,
+    img,
+    .stat-box {
+
+        transition: all .35s ease;
+
+    }
+
+
+    /* ==========================================
+        SHADOWS
+==========================================*/
+
+    .about-img {
+
+        box-shadow:
+            0 20px 50px rgba(0, 0, 0, .12);
+
+    }
+
+    .about-img:hover {
+
+        box-shadow:
+            0 30px 70px rgba(0, 0, 0, .18);
+
+    }
+
+
+    /* ==========================================
+        BACKGROUND PATTERN
+==========================================*/
+
+    .about-section {
+
+        background-image:
+            radial-gradient(circle at top right,
+                rgba(212, 175, 55, .08),
+                transparent 35%);
+
+    }
+
+    .journey-section {
+
+        background-image:
+            radial-gradient(circle at bottom left,
+                rgba(212, 175, 55, .08),
+                transparent 40%);
+
+    }
+
+
+    /* ==========================================
+        RESPONSIVE
+==========================================*/
+    [data-aos] {
+        transform: none;
+    }
+
+    @media(min-width:768px) {
+
+        [data-aos].aos-animate {
+            transform: translate3d(0, 0, 0);
+        }
+
+    }
+
+    @media(max-width:768px) {
+
+        .about-img {
+
+            animation: none;
+
+        }
+
+        .stat-box:hover {
+
+            transform: none;
+
+        }
+
+    }
+</style>
+
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="./Index.html">
+                Dr. B. Krishna Murthy
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./About.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Galary.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="./Services.html">
+                            Services
+                        </a>
+                    </li> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contactus.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ===================== BANNER ===================== -->
+
+    <section class="banner">
+
+        <img src="./Images/About-Baner.png" alt="About Banner" class="img-fluid w-100">
+
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+
+    <section class="about-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div data-aos="fade-right">
+
+                        <img src="./Images/about-me-1.png" alt="Dr. B. Krishna Murthy" class="img-fluid about-img">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div data-aos="fade-left">
+
+                        <span class="section-subtitle">
+                            ABOUT THE ARTIST
+                        </span>
+
+                        <h2 class="section-title">
+
+                            About Dr. B. Krishna Murthy
+
+                        </h2>
+
+                        <p>
+
+                            Dr. B. Krishna Murthy is an internationally recognized
+                            artist, educator, and mentor from Mahabubabad,
+                            Telangana, India. With a lifelong passion for painting
+                            and creative expression, he has dedicated more than
+                            three decades to promoting art, inspiring young artists,
+                            and preserving cultural values through his work.
+
+                        </p>
+
+                        <p>
+
+                            Beginning his artistic journey at an early age,
+                            Dr. Murthy successfully completed the Drawing Lower
+                            Grade and Higher Grade examinations, laying the
+                            foundation for a remarkable artistic career.
+
+                        </p>
+
+                        <p>
+
+                            Alongside his artistic achievements, he pursued higher
+                            education in English Literature, B.Ed., and M.Ed.,
+                            eventually serving as a Government Teacher while
+                            continuing his passion for visual arts.
+
+                        </p>
+
+                        <p>
+
+                            His artwork, created primarily with acrylic and oil
+                            mediums, beautifully reflects social awareness,
+                            human emotions, spirituality, and India's rich
+                            cultural heritage.
+
+                        </p>
+
+                        <p>
+
+                            Today, with more than <strong>545 original
+                                theme-based paintings</strong>, Dr. B. Krishna Murthy
+                            continues to inspire audiences across India and around
+                            the world through his creativity, dedication, and
+                            commitment to excellence.
+
+                        </p>
+
+                        <a href="./Gallery.html" class="btn artist-btn mt-3">
+
+                            Explore Gallery
+
+                            <i class="fas fa-arrow-right ml-2"></i>
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== ARTISTIC JOURNEY ===================== -->
+    <section class="journey-section">
+
+        <div class="container">
+
+            <div class="row align-items-center flex-lg-row flex-column-reverse">
+
+                <!-- Content -->
+
+                <div class="col-lg-6 col-md-12">
+                    <div data-aos="fade-right">
+
+                        <span class="section-subtitle">
+                            MY JOURNEY
+                        </span>
+
+                        <h2 class="section-title">
+                            Artistic Journey
+                        </h2>
+
+                        <h5 class="journey-heading">
+                            A Journey of Passion, Dedication & Excellence
+                        </h5>
+
+                        <p>
+                            Dr. B. Krishna Murthy's artistic journey reflects a lifelong
+                            commitment to creativity, education, and cultural preservation.
+                            What began as a childhood passion for drawing gradually evolved
+                            into an internationally recognized artistic career.
+                        </p>
+
+                        <p>
+                            From an early age, he demonstrated exceptional artistic talent
+                            by successfully completing the Drawing Lower Grade and Higher
+                            Grade examinations conducted by the State Board of Technical
+                            Education and Training, Hyderabad.
+                        </p>
+
+                        <p>
+                            Alongside his artistic achievements, Dr. Murthy pursued higher
+                            education in English Literature, B.Ed., and M.Ed., eventually
+                            serving as a Government Teacher while inspiring thousands of
+                            students through creative education.
+                        </p>
+
+                        <p>
+                            Since 1995, he has been creating meaningful theme-based
+                            paintings using acrylic and oil mediums. His artworks reflect
+                            social awareness, cultural heritage, spirituality, and the
+                            beauty of everyday life.
+                        </p>
+
+                        <p>
+                            During the COVID-19 pandemic, he transformed challenges into
+                            opportunities by producing over 135 original paintings and
+                            innovative Teaching Learning Materials, continuing to promote
+                            art through digital platforms.
+                        </p>
+
+                        <p>
+                            By the end of 2025, Dr. B. Krishna Murthy had created more than
+                            <strong>545 original theme-based paintings</strong>, earning
+                            numerous prestigious national and international awards,
+                            honorary recognitions, and world record achievements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image -->
+
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div data-aos="fade-left">
+
+                        <img src="./Images/About-me.png" class="img-fluid about-img" alt="Artistic Journey">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Statistics ================= -->
+
+    <!-- <section class="stats-section">
+
+        <div class="container">
+
+            <div class="row text-center">
+
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
+
+                    <div class="stat-box">
+
+                        <i class="fas fa-palette"></i>
+
+                        <h2>545+</h2>
+
+                        <p>Original Paintings</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
+
+                    <div class="stat-box">
+
+                        <i class="fas fa-award"></i>
+
+                        <h2>50+</h2>
+
+                        <p>Awards & Honors</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
+
+                    <div class="stat-box">
+
+                        <i class="fas fa-user-graduate"></i>
+
+                        <h2>30+</h2>
+
+                        <p>Years Experience</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
+
+                    <div class="stat-box">
+
+                        <i class="fas fa-globe"></i>
+
+                        <h2>Worldwide</h2>
+
+                        <p>Recognition</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <section class="stats-section">
+
+        <div class="container">
+
+            <div class="row text-center">
+
+                <!-- Original Paintings -->
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
+                    <div class="stat-box">
+                        <i class="fas fa-palette"></i>
+                        <h2><span class="counter" data-target="545">0</span>+</h2>
+                        <p>Original Paintings</p>
+                    </div>
+                </div>
+
+                <!-- Awards -->
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
+                    <div class="stat-box">
+                        <i class="fas fa-award"></i>
+                        <h2><span class="counter" data-target="50">0</span>+</h2>
+                        <p>Awards & Honors</p>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
+                    <div class="stat-box">
+                        <i class="fas fa-user-graduate"></i>
+                        <h2><span class="counter" data-target="30">0</span>+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+
+                <!-- Countries -->
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
+                    <div class="stat-box">
+                        <i class="fas fa-globe"></i>
+                        <h2>Worldwide</h2>
+
+                        <p>Recognition</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= Footer ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+
+                    <!-- <h3>Dr. B. Krishna Murthy</h3>
+
+                    <p>
+                        Celebrating Creativity • Inspiring Generations • Preserving Culture
+                    </p> -->
+
+                    <div class="social-icons">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                    <hr>
+
+                    <p class="mb-0">
+                        © 2026 Dr. B. Krishna Murthy. All Rights Reserved.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- AOS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        window.addEventListener("load", function () {
+            AOS.refresh();
+        });
+    </script>
+
+    <!-- Navbar scroll colour change -->
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+    <!-- No of count of  -->
+    <script>
+        const counters = document.querySelectorAll(".counter");
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (!entry.isIntersecting) return;
+
+                const counter = entry.target;
+                const target = parseInt(counter.dataset.target);
+
+                let count = 0;
+                const speed = target / 100;
+
+                const updateCounter = () => {
+
+                    count += speed;
+
+                    if (count < target) {
+
+                        counter.innerText = Math.ceil(count);
+
+                        requestAnimationFrame(updateCounter);
+
+                    } else {
+
+                        counter.innerText = target;
+
+                    }
+
+                };
+
+                updateCounter();
+
+                observer.unobserve(counter);
+
+            });
+
+        }, {
+            threshold: 0.5
+        });
+
+        counters.forEach(counter => observer.observe(counter));
+    </script>
+
+</body>
+
+</html>
